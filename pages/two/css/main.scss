@@ -1,0 +1,139 @@
+*{margin: 0px;padding: 0px;}
+.frame{
+    background-image: url("../assests/zenitsu.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    .frame-txt{
+        width: 100%;
+        height: 100vh;
+        
+        backdrop-filter: brightness(.5);
+        justify-content: center;
+        align-items: flex-end;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+       
+    }
+}
+.frame-txt-main{
+    padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width:100%;
+
+        h1,ul,p{
+            opacity: 0;
+            animation: slow 2s both linear;
+        }
+    
+}
+h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: #ebeeee;
+    
+}
+p{
+    font-size: 30px;
+    color: #979fa5;
+}
+li{
+    display: inline-block;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    &:nth-child(1){
+          background-color: #47a3b0;
+    }
+    &:nth-child(2){
+        background-color: #0b84e0;
+  }
+  &:nth-child(3){
+    background-color: #4067a4
+}
+&:nth-child(4){
+    background-color: #373737;
+}
+    
+}
+
+a{
+    
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+}
+.d-flex-row{
+    display: flex;
+    
+}
+.d-flex-center{
+    align-items: center;
+    justify-content: center;
+}
+
+/*anima*/
+@keyframes slow 
+{
+    
+    30%{opacity: .4;padding-right : .5rem;}
+    100%{opacity: 1;padding-right: 1rem;}
+    
+}
+
+@media (min-width:320px) and (max-width:375px) 
+{
+    h1{
+        font-size: 30px;  
+        
+    }
+    p{
+        font-size: 15px;
+        padding: .5rem;
+        text-align: center;
+    }
+    li{
+        
+        
+        padding: .3rem;
+        
+    }
+    .frame-txt-main{
+        padding: 0px;
+    }
+    
+}
+
+
+
+@media (min-width:425px) and (max-width:768px) 
+{
+    h1{
+        font-size: 30px;  
+        
+    }
+    p{
+        font-size: 18px;
+        padding: 0rem;
+        text-align: right;
+    }
+    li{
+        
+        
+        padding: .3rem;
+        
+    }
+    .frame-txt-main{
+        padding: 0px;
+    }
+    
+}
