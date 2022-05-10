@@ -1,0 +1,205 @@
+.frame {
+  -webkit-animation: back 1s both linear;
+          animation: back 1s both linear;
+}
+
+.frame-txt-head {
+  width: 100%;
+  /*   color: #888888;*/
+}
+
+.frame-txt-head h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.frame-txt-head h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.frame-txt-head hr {
+  width: 80%;
+  height: 3px;
+  color: black;
+  margin-top: 2rem;
+  border: 0px;
+  background-color: black;
+}
+
+.frame-txt-head p {
+  width: 80%;
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.frame-txt {
+  -webkit-animation: back-txt 1.5s both linear;
+          animation: back-txt 1.5s both linear;
+  width: 30rem;
+  height: 100%;
+  position: absolute;
+  z-index: 12;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  opacity: .1;
+}
+
+.d-flex-colm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-flex-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.frame-ul {
+  width: 100%;
+}
+
+ul {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+  margin: .5rem;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@-webkit-keyframes back {
+  0% {
+  }
+  100% {
+    background-image: url("../assets/1034566.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+}
+
+@keyframes back {
+  0% {
+  }
+  100% {
+    background-image: url("../assets/1034566.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+}
+
+@-webkit-keyframes back-txt {
+  0% {
+    opacity: .1;
+  }
+  30% {
+    opacity: .4;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+
+@keyframes back-txt {
+  0% {
+    opacity: .1;
+  }
+  30% {
+    opacity: .4;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  ul {
+    margin: 0px;
+  }
+  .frame {
+    background: none;
+  }
+  .frame::before {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("../assets/1034566.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .frame-txt {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    opacity: 1;
+  }
+  .d-flex-left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .frame-ul {
+    margin-top: 1rem;
+  }
+  .frame-txt-head {
+    width: 100%;
+  }
+  .frame-txt-head p {
+    text-align: center;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
