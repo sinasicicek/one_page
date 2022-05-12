@@ -26,9 +26,9 @@
 }
 .frame-prd{
     width: 60%;
-    height: 100%;
+    min-height: 100vh;
     background-color: rgb(70, 62, 62);
-    animation: clr 5s both linear ;
+    animation: clr 6s both linear ;
 }
 .frame-txt{
     width: 40%;
@@ -38,6 +38,7 @@
     padding: 2rem;
     opacity: .8;
     color:white;
+  
     h1{
         font-size: 41px;
         
@@ -49,8 +50,9 @@
         padding: 1rem;
         font-size: 24px;
     }
-    div{
+    .div-txt{
         width: 100%;
+        animation: clr 2s both linear ;
     }
 }
 ul{
@@ -72,10 +74,9 @@ ul{
 @keyframes clr
 {
     20%{opacity: .2;}
-    40%{opacity: .4;}    
-    60%{opacity: .6;}
+  
     80%{opacity: .8;} 
-    100%{opacity: .9;}
+    100%{opacity: .9;background-color: transparent;}
  
 
 }

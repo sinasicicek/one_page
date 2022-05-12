@@ -34,10 +34,10 @@
 
 .frame-prd {
   width: 60%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #463e3e;
-  -webkit-animation: clr 5s both linear;
-          animation: clr 5s both linear;
+  -webkit-animation: clr 6s both linear;
+          animation: clr 6s both linear;
 }
 
 .frame-txt {
@@ -62,8 +62,10 @@
   font-size: 24px;
 }
 
-.frame-txt div {
+.frame-txt .div-txt {
   width: 100%;
+  -webkit-animation: clr 2s both linear;
+          animation: clr 2s both linear;
 }
 
 ul li {
@@ -85,17 +87,12 @@ ul li:hover {
   20% {
     opacity: .2;
   }
-  40% {
-    opacity: .4;
-  }
-  60% {
-    opacity: .6;
-  }
   80% {
     opacity: .8;
   }
   100% {
     opacity: .9;
+    background-color: transparent;
   }
 }
 
@@ -103,17 +100,12 @@ ul li:hover {
   20% {
     opacity: .2;
   }
-  40% {
-    opacity: .4;
-  }
-  60% {
-    opacity: .6;
-  }
   80% {
     opacity: .8;
   }
   100% {
     opacity: .9;
+    background-color: transparent;
   }
 }
 
