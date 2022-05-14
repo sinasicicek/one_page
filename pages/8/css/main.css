@@ -1,0 +1,200 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.frame {
+  background-image: url("../assest/10-14-Night.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.shadow {
+  width: 100%;
+  -webkit-backdrop-filter: contrast(0.5);
+          backdrop-filter: contrast(0.5);
+}
+
+.frame-txt {
+  background-color: white;
+  width: 40%;
+  height: 100vh;
+}
+
+.h1 {
+  padding: 1rem;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: .8rem;
+}
+
+.hr {
+  width: 100%;
+  margin: 1rem;
+}
+
+.hr hr {
+  width: 10%;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-flex-center-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.div-txt {
+  opacity: 0;
+  -webkit-animation: clr 3s both linear;
+          animation: clr 3s both linear;
+  color: #545454;
+}
+
+.div-txt p {
+  text-align: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.div-ul {
+  padding: 2rem;
+}
+
+ul li {
+  padding: .5rem;
+  display: inline-block;
+  opacity: .5;
+}
+
+ul li img {
+  width: 30px;
+  height: 30px;
+}
+
+ul li:hover {
+  opacity: 1;
+}
+
+@-webkit-keyframes clr {
+  80% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes clr {
+  80% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  .frame {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .frame-txt {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .frame-txt .div-txt h1 {
+    font-size: 24px;
+  }
+  .frame-txt .div-txt p {
+    font-size: 14px;
+    padding: 0px;
+  }
+  .frame-txt .div-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .frame-prd {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  .frame {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .frame-txt {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .frame-txt .div-txt h1 {
+    font-size: 24px;
+  }
+  .frame-txt .div-txt p {
+    font-size: 14px;
+    padding: 0px;
+  }
+  .frame-txt .div-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .frame-prd {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
