@@ -1,0 +1,46 @@
+.fra{
+    width: 100%;
+    min-height: 100vh;
+}
+.fra-item
+{
+    cursor: pointer;
+    max-width: 24rem;
+    height: 15rem;
+    width: 30rem;
+    margin: .5rem;
+    a{
+        img{
+            width: 24rem;
+            height: 15rem;
+            border-radius: 5px;
+        }
+    }
+   /* &:hover::before{
+        content:attr(name);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: white;
+        width: 24rem;
+        height: 15rem;
+        backdrop-filter: brightness(0.5);
+        position: absolute;
+        animation: shadow 1.5s linear;
+    }*/
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes shadow 
+{
+    20%{transform:scale(.2);}
+    50%{transform:scale(.5);}
+    100%{transform:scale(1);}    
+}
