@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  min-height: 110vh;
+  background-image: url(../assest/2222765.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  -webkit-animation: body-bright 2s both linear;
+          animation: body-bright 2s both linear;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.f {
+  height: 100vh;
+  -webkit-animation: f-bright 3s both linear;
+          animation: f-bright 3s both linear;
+}
+
+.f-head h1 {
+  font-size: 60px;
+  color: white;
+  padding: 1rem;
+}
+
+.f-head hr {
+  width: 40%;
+  margin: 1rem;
+}
+
+.f-txt {
+  padding: 1rem;
+}
+
+.f-txt p {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  width: 40%;
+}
+
+.f-btn {
+  padding: 1rem;
+}
+
+.f-btn button {
+  width: 300px;
+  padding: 1.6rem;
+  background-color: transparent;
+  border-radius: .8rem;
+  border: 1px solid white;
+  margin: 1rem;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.social {
+  width: 100%;
+}
+
+.social li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.social li a img {
+  width: 24px;
+  height: 24px;
+}
+
+@-webkit-keyframes body-bright {
+  0% {
+    -webkit-backdrop-filter: brightness(0.02);
+            backdrop-filter: brightness(0.02);
+  }
+  100% {
+    -webkit-backdrop-filter: brightness(0.5);
+            backdrop-filter: brightness(0.5);
+  }
+}
+
+@keyframes body-bright {
+  0% {
+    -webkit-backdrop-filter: brightness(0.02);
+            backdrop-filter: brightness(0.02);
+  }
+  100% {
+    -webkit-backdrop-filter: brightness(0.5);
+            backdrop-filter: brightness(0.5);
+  }
+}
+
+@-webkit-keyframes f-bright {
+  1% {
+    opacity: .001;
+  }
+  50% {
+    opacity: .001;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+
+@keyframes f-bright {
+  1% {
+    opacity: .001;
+  }
+  50% {
+    opacity: .001;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+/*# sourceMappingURL=main.css.map */
