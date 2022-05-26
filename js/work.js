@@ -14,6 +14,8 @@ let dosya=
     "./pages/10/index.html",
     "./pages/11/index.html",
     "./pages/12/index.html",
+    "./pages/13/index.html",
+    "./pages/14/index.html",
 ]
 
 
